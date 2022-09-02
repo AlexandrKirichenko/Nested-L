@@ -1,12 +1,11 @@
 
 npm i
 
-#Запуск в режиме concurrently сервера и фронта
+#Server and client start in concurrently mode
 npm run dev 
 
-#Запуск сервера 
+#Server start
 npm run server
 
-#Запуск клиента
+#Client start
 npm run start
-
