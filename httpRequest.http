@@ -1,0 +1,39 @@
+### Send POST request with json body
+POST http://localhost:3001/register
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "bestTestPassw0rd",
+  "firstname": "Olivier",
+  "lastname": "Monge"
+}
+
+### Send POST request with json body
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "bestTestPassw0rd"
+}
+
+###
+GET http://localhost:3001/notes/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE2NjExODA0NjksImV4cCI6MTY2MTE4NDA2OSwic3ViIjoiMiJ9.BxhBDCotXKWnuQe_5hAY6oseYY0CmmZkm8DDAaEZccY
+
+
+
+###
+POST http://localhost:3001/user/1/notes
+Content-Type: application/json
+
+
+{
+  "parentId": "1",
+  "title": "12222",
+  "order": 111,
+  "isEnableSubList": false
+
+}
